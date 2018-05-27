@@ -1,0 +1,32 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+tab_width = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{py,cs,php}]
+indent_size = 4
+tab_width = 4
+
+# The JSON files contain newlines inconsistently
+[*.json]
+insert_final_newline = ignore
+
+# Minified JavaScript & CSS files shouldn't be changed
+[**.min.{js,css}]
+indent_style = ignore
+insert_final_newline = ignore
+
+[*.{js,py,cs,php}]
+max_line_length = off
+
+[Makefile]
+indent_style = tab
+
+[*.md]
+trim_trailing_whitespace = false

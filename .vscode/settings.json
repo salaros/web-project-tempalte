@@ -1,0 +1,9 @@
+{
+      // Exclude files from File Explorer
+      "files.exclude": {
+        "**/*.bak*"                         : true,
+        "**/*.orig"                         : true,
+        "node_modules"                      : true,
+        "vendor"                            : true,
+      }
+}
